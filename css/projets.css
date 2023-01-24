@@ -1,0 +1,19 @@
+body {
+    background-image: url(https://st.depositphotos.com/1002277/2685/i/450/depositphotos_26852211-stock-photo-black-crumpled-background.jpg);
+}
+.carousel-inner {
+    margin-top: 50px;
+}
+
+.carousel-inner img {
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    border: 10px solid grey;
+    
+}
+
+.navbar span {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

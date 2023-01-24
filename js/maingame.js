@@ -47,18 +47,18 @@ function matchCards(img1, img2) {
         cardOne = cardTwo = "";
         if (img1 == "http://127.0.0.1:5500/images/img-1.jpeg") {
             console.log("PPL");
-            setTimeout(redirectCv, 2000)
+            setTimeout(redirectCv, 1000)
             
         }
         else if(img1 == "http://127.0.0.1:5500/images/img-2.jpeg") {
-            setTimeout(redirectAbout, 2000) 
+            setTimeout(redirectAbout, 1000) 
             
         }
         else if (img1 == "http://127.0.0.1:5500/images/img-3.jpeg") {
-            setTimeout(redirectProjets, 2000) 
+            setTimeout(redirectProjets, 1000) 
         }
         else if (img1 == "http://127.0.0.1:5500/images/img-4.jpeg") {
-            setTimeout(redirectContact, 2000) 
+            setTimeout(redirectContact, 1000) 
         }
         return disableDeck = false;
     }
