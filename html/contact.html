@@ -10,9 +10,52 @@
 </head>
 
 <body>
-    <div class="contactez-nous">
+
+    <button onclick="openModal()">Contactez-moi</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Envoyez-moi un e-mail à l'adresse suivante :</p>
+        <p><a href="mailto:maevaponton3@gmail.com">maevaponton3@gmail.com</a></p>
+      </div>
+    </div>
+    
+    <script>
+    // Obtenez la modal
+    var modal = document.getElementById("myModal");
+    
+    // Obtenez le bouton qui ouvre la modal
+    var btn = document.getElementsByTagName("button")[0];
+    
+    // Obtenez l'élément span qui ferme la modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // Lorsque l'utilisateur clique sur le bouton, ouvrez la modal
+    function openModal() {
+      modal.style.display = "block";
+    }
+    
+    // Lorsque l'utilisateur clique sur l'icône de fermeture, fermez la modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // Lorsque l'utilisateur clique en dehors de la modal, fermez-la
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
+
+
+   <!--  <div class="contactez-nous">
         <h1>Contactez-moi</h1>
-        <p>Une question ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec moi !</p>
+        <p>Une question ? <br> N’hésitez pas à utiliser ce formulaire pour prendre contact avec moi !</p>
+        <br>
+        <br>
         <form action="/page-traitement-donnees" method="post">
             <div>
                 <label for="nom">Votre nom</label>
@@ -30,9 +73,9 @@
                 <label for="sujet">Quel est le sujet de votre message ?</label>
                 <select name="sujet" id="sujet" required>
                     <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
-                    <option value="probleme-compte">Problème avec mon compte</option>
-                    <option value="question-produit">Question à propos d’un produit</option>
-                    <option value="suivi-commande">Problème avec votre portfolio</option>
+                    <option value="probleme-compte">Demande de renseignements complémentaires</option>
+                    <option value="question-produit">Proposition de stage</option>
+                    <option value="suivi-commande">Problème avec le portfolio</option>
                     <option value="autre">Autre...</option>
                 </select>
             </div>
@@ -45,7 +88,7 @@
                 <button type="submit">Envoyer mon message</button>
             </div>
         </form>
-    </div>
+    </div> -->
 
 </body>
 

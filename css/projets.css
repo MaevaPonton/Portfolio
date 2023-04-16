@@ -1,19 +1,56 @@
-body {
-    background-image: url(https://st.depositphotos.com/1002277/2685/i/450/depositphotos_26852211-stock-photo-black-crumpled-background.jpg);
-}
-.carousel-inner {
-    margin-top: 50px;
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.carousel-inner img {
-    width: 1000px;
-    height: 800px;
-    margin: auto;
-    border: 10px solid grey;
-    
+.logo1 {
+  width: 20%;
+  height: 20%;
 }
 
-.navbar span {
-    font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+h1 {
+  text-align: center;
 }
+
+.card {
+  margin-left: 20%;
+}
+
+/* FOOTER */
+
+.footer{
+  background: #C7B06C; 
+  width: 98%; 
+  color:#fff; 
+  margin: 1%; 
+  padding:2%;
+  display: inline-block;
+  margin-top: 10%;
+}
+  
+  a.footerlogo {
+  color:#fff; 
+  width: 10%;
+  float:left; 
+  padding: 1% 1% 1% 1%; 
+  text-decoration: none; 
+  margin: 0% 5% 0% 0%;
+}
+  
+  img.icon {
+    width:35px; 
+    float:left; 
+    height:35px; 
+    margin: 7px; 
+    position: relative;
+    border-radius: 20%;
+  }
+  
+  .icon:hover {
+    opacity: 0.5;
+  }

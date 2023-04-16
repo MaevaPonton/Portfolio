@@ -1,79 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
-	<title> Page 1</title>
-
-	<link rel="stylesheet" href="../css/styleindex.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title> Portfolio Maëva Ponton</title>
 </head>
-<body class="background">
-	
-	<div class='a'>
-        <img class="img" src="../images/css.png">
+
+
+<body style="background-color: #C7B06C;">
+
+<header>
+  <nav class="navbar navbar-dark fixed-top" style="background-color: black;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="../images/photo-profil.png" alt="Photo" class="photo-profil" style="width: 25%; height: 25%;"></a>
+      <div class="title-workaround">
+        <div class="title-container">
+          <div class="uncover"></div>
+          <div class="slides">
+            <div class="slide left"></div>
+            <div class="slide right"></div>
+          </div>
+          <div class="the-title">
+            Maëva PONTON
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"style="color: #C7B06C;" ></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="../images/photo-profil.png" alt="Photo" class="photo-profil" style="width: 20%; height: 20%;"></h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./cv.html" style="color:#C7B06C">Curriculum Vitae</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html"style="color:#C7B06C" >Lettre de Motivation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projets.html" style="color:#C7B06C">Projets réalisés</a>
+            </li>
+            <button onclick="openModal()">Contactez-moi</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Envoyez-moi un e-mail à l'adresse suivante :</p>
+        <p><a href="mailto:maevaponton3@gmail.com">maevaponton3@gmail.com</a></p>
+      </div>
     </div>
-
-    <div class='b'>
-        <img class="img" src="../images/php.jpeg">
+        </div>
+      </div>
     </div>
+  </nav>
+</header>
 
-    <div class='c'>
-        <img class="img" src="../images/js.png">
-    </div>
 
-    <div class='d'>
-        <img class="img" src="../images/html.png">
-    </div>
+<section class="container container2" style="text-align: center;">
 
-    <div class='e'>
-        <img class="img" src="../images/angular.jpg">
-    </div>
+    <h2> Bonjour et bienvenue sur mon portfolio !</h2>
 
-    <div class='f'>
-        <img class="img" src="../images/sql.png">
-    </div>
-
-    <div class='g'>
-        <img class="img" src="">
-    </div>
-
-    <div class='h'>
-        <img class="img" src="">
-	</div>
-
-	<div class='i'>
-        <img class="img" src="">
-	</div>
-
-	<div class='j'>
-        <img class="img" src="">
-	</div>
-
-	<div class='k'>
-        <img class="img" src="">
-	</div>
-
-	<div class='l'>
-        <img class="img" src="">
-	</div>
-
-	<div class='m'>
-        <img class="img" src="">
-	</div>
-
-	<h1 class="titre">Maëva PONTON</h1>
     <p> En reconversion professionnelle, je suis actuellement une formation <br> 
-    "Développeur Web et Web Mobile" au sein de GARAGE 404. <br> <br> <br> Je vous invite à cliquer sur le bouton "Jouer" <br> afin d'en savoir plus </p>
+    "Développeur Web et Web Mobile". <br><br> Je co-anime également le samedi matin des ateliers informatiques auprès
+    d'enfants de 7 à 16 ans, afin de leur faire découvrir les bases de la programmation.<br><br>Je vous invite à jouer à une partie de Mémory 
+  afin d'en savoir plus. <br> Bonne partie ! </p>
+   
+  </section>    
+
+  <section class="container">
+  <div class="wrapper" style="margin: auto;">
+    <ul class="cards">
+      <!-- image 1 -->
+      <li class="card">
+        <div class="view front-view">
+          <img src="../images/carte.png" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="../images/img-1.jpeg" alt="card-img" class="card-img">
+        </div>
+      </li>
+      <!-- image 2 -->
+      <li class="card">
+        <div class="view front-view">
+          <img src="../images/carte.png" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="../images/img-2.jpeg" alt="card-img">
+        </div>
+      </li>
+      <!-- image 3 -->
+      <li class="card">
+        <div class="view front-view">
+          <img src="../images/carte.png" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="../images/img-3.jpeg" alt="card-img">
+        </div>
+      </li>
+      <!-- image 4  -->
+      <li class="card">
+        <div class="view front-view">
+          <img src="../images/carte.png" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="../images/img-4.jpeg" alt="card-img">
+        </div>
+      </li>
+      
+      <!-- Duplicate image  -->
+      <!-- image 1 -->
+      <li class="card">
+        <div class="view front-view">
+          <img src="../images/carte.png" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="../images/img-1.jpeg" alt="card-img">
+        </div>
+      </li>
+      <!-- image 2 -->
+      <li class="card">
+        <div class="view front-view">
+          <img src="../images/carte.png" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="../images/img-2.jpeg" alt="card-img">
+        </div>
+      </li>
+      <!-- image 3 -->
+      <li class="card">
+        <div class="view front-view">
+          <img src="../images/carte.png" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="../images/img-3.jpeg" alt="card-img">
+        </div>
+      </li>
+      <!-- image 4 -->
+      <li class="card">
+        <div class="view front-view">
+          <img src="../images/carte.png" alt="icon">
+        </div>
+        <div class="view back-view">
+          <img src="../images/img-4.jpeg" alt="card-img">
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+ 
+
+
+
+<footer class="footer">
+  <section class="icone_social_footer">
+    <a href="https://codepen.io/" target="_blank" >
+      <img src="../images/github.png.png" class="icon"></a>
+    <a href="https://codepen.io/" target="_blank">
+      <img src="../images/linkedin.webp" class="icon"></a>
     
-
-
-
-<div class="btn play">
-	<a href="game.html">Jouer</p></a>
-</div>
-
-
+  </section>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 <script src="../js/mainindex.js"></script>
-
 </body>
+
+
 </html>
