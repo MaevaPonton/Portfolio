@@ -2,7 +2,7 @@
  
  
  body {
-    background-image: url(../images/fond.jpeg);
+    background-color: black;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
     display: flex;

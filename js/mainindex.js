@@ -98,37 +98,6 @@ cards.forEach(card => {
 
 
 
-
-// FORMULAIRE DE CONTACT
-
-
-// Obtenez la modal
-var modal = document.getElementById("myModal");
-
-// Obtenez le bouton qui ouvre la modal
-var btn = document.getElementsByTagName("button")[0];
-
-// Obtenez l'élément span qui ferme la modal
-var span = document.getElementsByClassName("close")[0];
-
-// Lorsque l'utilisateur clique sur le bouton, ouvrez la modal
-function openModal() {
-  modal.style.display = "block";
-}
-
-// Lorsque l'utilisateur clique sur l'icône de fermeture, fermez la modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// Lorsque l'utilisateur clique en dehors de la modal, fermez-la
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
 // TITRE
 
 var runFunction = function() {
