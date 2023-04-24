@@ -444,7 +444,7 @@ section > div {
     }
     .prez{
         border-bottom: none;
-        border-right: 2px solid #ccc;
+        border-right: 2px solid #C7B06C;
         padding-right: 20px;
         margin-left: auto;
     }
@@ -481,16 +481,67 @@ section > div {
     .photo img {
         margin-top: 30px;
     }
+    p.presentation {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .photo img {
         margin-top: 30px;
     }
+    p{
+        font-size: 0.70rem;
+    }
+    p.presentation {
+        font-size: 0.9rem;
+    }
+    .prez-titre{
+        font-size:1.4rem ;
+    }
+    .contact-titre{
+        font-size:1.4rem ;
+    }
+    .experience{
+        font-size:1.7rem ;
+    }
+    .exp h3{
+        font-size: 1.4rem;
+    }
+    .exp-info p {
+        font-size: 0.9rem;
+    }
+    .exp-info h4 {
+        font-size: 0.9rem;
+    }
+    .formation{
+        font-size:1.7rem ;
+    }
+    .exp-info h3 {
+        font-size: 1.3rem;
+    }
+    .competences{
+        font-size:1.7rem ;
+    }
+    .h3gauche {
+        font-size:1.5rem ;
+    }
+    .centreinteret{
+        font-size:1.7rem ;
+    }
+    .interet figcaption {
+        font-size: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
     .photo img {
         margin-top: 30px;
     }
+    .comp p {
+        font-size: 0.65rem;
+    }
+  
+  
     }
